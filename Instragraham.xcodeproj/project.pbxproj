@@ -21,6 +21,15 @@
 		3A4EFFD018A03EC6006F0C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4EFFB218A03EC6006F0C8F /* UIKit.framework */; };
 		3A4EFFD818A03EC6006F0C8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EFFD618A03EC6006F0C8F /* InfoPlist.strings */; };
 		3A4EFFDA18A03EC6006F0C8F /* InstragrahamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFD918A03EC6006F0C8F /* InstragrahamTests.m */; };
+		3A4EFFE518A03F33006F0C8F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFE418A03F33006F0C8F /* LoginViewController.m */; };
+		3A4EFFE818A03F45006F0C8F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFE718A03F45006F0C8F /* RegisterViewController.m */; };
+		3A4EFFEB18A03F51006F0C8F /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFEA18A03F51006F0C8F /* BrowseViewController.m */; };
+		3A4EFFEE18A03F5E006F0C8F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFED18A03F5E006F0C8F /* DetailViewController.m */; };
+		3A4EFFF118A03F6C006F0C8F /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFF018A03F6C006F0C8F /* NewsFeedViewController.m */; };
+		3A4EFFF418A03F8E006F0C8F /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFF318A03F8E006F0C8F /* CameraViewController.m */; };
+		3A4EFFF718A03F9C006F0C8F /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFF618A03F9C006F0C8F /* UploadViewController.m */; };
+		3A4EFFFA18A03FE4006F0C8F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFF918A03FE4006F0C8F /* ProfileViewController.m */; };
+		3A4EFFFC18A045FD006F0C8F /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EFFFB18A045FD006F0C8F /* camera-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,23 @@
 		3A4EFFD518A03EC6006F0C8F /* InstragrahamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstragrahamTests-Info.plist"; sourceTree = "<group>"; };
 		3A4EFFD718A03EC6006F0C8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A4EFFD918A03EC6006F0C8F /* InstragrahamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstragrahamTests.m; sourceTree = "<group>"; };
+		3A4EFFE318A03F33006F0C8F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3A4EFFE418A03F33006F0C8F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3A4EFFE618A03F45006F0C8F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		3A4EFFE718A03F45006F0C8F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		3A4EFFE918A03F51006F0C8F /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
+		3A4EFFEA18A03F51006F0C8F /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
+		3A4EFFEC18A03F5E006F0C8F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3A4EFFED18A03F5E006F0C8F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3A4EFFEF18A03F6C006F0C8F /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
+		3A4EFFF018A03F6C006F0C8F /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
+		3A4EFFF218A03F8E006F0C8F /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		3A4EFFF318A03F8E006F0C8F /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		3A4EFFF518A03F9C006F0C8F /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		3A4EFFF618A03F9C006F0C8F /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		3A4EFFF818A03FE4006F0C8F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		3A4EFFF918A03FE4006F0C8F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		3A4EFFFB18A045FD006F0C8F /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +141,22 @@
 				3A4EFFBD18A03EC6006F0C8F /* AppDelegate.h */,
 				3A4EFFBE18A03EC6006F0C8F /* AppDelegate.m */,
 				3A4EFFC018A03EC6006F0C8F /* Main.storyboard */,
+				3A4EFFF818A03FE4006F0C8F /* ProfileViewController.h */,
+				3A4EFFF918A03FE4006F0C8F /* ProfileViewController.m */,
+				3A4EFFE318A03F33006F0C8F /* LoginViewController.h */,
+				3A4EFFE418A03F33006F0C8F /* LoginViewController.m */,
+				3A4EFFE618A03F45006F0C8F /* RegisterViewController.h */,
+				3A4EFFE718A03F45006F0C8F /* RegisterViewController.m */,
+				3A4EFFE918A03F51006F0C8F /* BrowseViewController.h */,
+				3A4EFFEA18A03F51006F0C8F /* BrowseViewController.m */,
+				3A4EFFEC18A03F5E006F0C8F /* DetailViewController.h */,
+				3A4EFFED18A03F5E006F0C8F /* DetailViewController.m */,
+				3A4EFFEF18A03F6C006F0C8F /* NewsFeedViewController.h */,
+				3A4EFFF018A03F6C006F0C8F /* NewsFeedViewController.m */,
+				3A4EFFF218A03F8E006F0C8F /* CameraViewController.h */,
+				3A4EFFF318A03F8E006F0C8F /* CameraViewController.m */,
+				3A4EFFF518A03F9C006F0C8F /* UploadViewController.h */,
+				3A4EFFF618A03F9C006F0C8F /* UploadViewController.m */,
 				3A4EFFC318A03EC6006F0C8F /* ViewController.h */,
 				3A4EFFC418A03EC6006F0C8F /* ViewController.m */,
 				3A4EFFC618A03EC6006F0C8F /* Images.xcassets */,
@@ -127,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4EFFB618A03EC6006F0C8F /* Instragraham-Info.plist */,
+				3A4EFFFB18A045FD006F0C8F /* camera-icon.png */,
 				3A4EFFB718A03EC6006F0C8F /* InfoPlist.strings */,
 				3A4EFFBA18A03EC6006F0C8F /* main.m */,
 				3A4EFFBC18A03EC6006F0C8F /* Instragraham-Prefix.pch */,
@@ -229,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4EFFC718A03EC6006F0C8F /* Images.xcassets in Resources */,
+				3A4EFFFC18A045FD006F0C8F /* camera-icon.png in Resources */,
 				3A4EFFB918A03EC6006F0C8F /* InfoPlist.strings in Resources */,
 				3A4EFFC218A03EC6006F0C8F /* Main.storyboard in Resources */,
 			);
@@ -249,9 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4EFFE818A03F45006F0C8F /* RegisterViewController.m in Sources */,
+				3A4EFFE518A03F33006F0C8F /* LoginViewController.m in Sources */,
 				3A4EFFC518A03EC6006F0C8F /* ViewController.m in Sources */,
+				3A4EFFF718A03F9C006F0C8F /* UploadViewController.m in Sources */,
+				3A4EFFF118A03F6C006F0C8F /* NewsFeedViewController.m in Sources */,
 				3A4EFFBF18A03EC6006F0C8F /* AppDelegate.m in Sources */,
+				3A4EFFEB18A03F51006F0C8F /* BrowseViewController.m in Sources */,
+				3A4EFFF418A03F8E006F0C8F /* CameraViewController.m in Sources */,
+				3A4EFFFA18A03FE4006F0C8F /* ProfileViewController.m in Sources */,
 				3A4EFFBB18A03EC6006F0C8F /* main.m in Sources */,
+				3A4EFFEE18A03F5E006F0C8F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
