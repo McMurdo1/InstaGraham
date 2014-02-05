@@ -7,11 +7,13 @@
 //
 
 #import "LoginViewController.h"
+#import "Parse/Parse.h"
+#import "RegisterViewController.h"
+#import "BrowseViewController.h"
 
-@interface LoginViewController () <UITextFieldDelegate>
+@interface LoginViewController () <UITextFieldDelegate, PFSignUpViewControllerDelegate, PFLogInViewControllerDelegate>
 {
-    __weak IBOutlet UITextField *userNameTextField;
-    __weak IBOutlet UITextField *passwordTextField;
+
     
 }
 @end
@@ -24,21 +26,49 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
+    
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField
+
+-(void)viewDidAppear:(BOOL)animated
 {
-    textField.delegate = self;
-    [self.view endEditing:YES];
-    [textField resignFirstResponder];
-    return YES;
+    PFLogInViewController *loginVC = [PFLogInViewController new];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    self.signUpController.delegate = self;
+    self.delegate = self;
+    titleLabel.text = @"InstaGraham";
+    titleLabel.textColor = [UIColor whiteColor];
+    [titleLabel sizeToFit];
+    self.logInView.logo = titleLabel;
+    [self.logInView.usernameField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.logInView.passwordField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.logInView.usernameField setTextColor:[UIColor purpleColor]];
+    [self.logInView.passwordField setTextColor:[UIColor purpleColor]];
+    [self.logInView setBackgroundColor:[UIColor greenColor]];
+    
+    RegisterViewController *registerVC = [RegisterViewController new];
+    
+    self.signUpController = registerVC;
+    self.signUpController.delegate = self;
+    
+    if ([PFUser currentUser])
+    {
+        [self performSegueWithIdentifier:@"LoginToBrowserSegue" sender:self];
+    }
 }
 
-- (IBAction)onRegisterButtonPushed:(id)sender
+-(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
-    [userNameTextField resignFirstResponder];
-    [passwordTextField resignFirstResponder];
+    [logInController performSegueWithIdentifier:@"LoginToBrowserSegue" sender:self];
 }
+
+-(void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 
 @end

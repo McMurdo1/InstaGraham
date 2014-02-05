@@ -7,32 +7,34 @@
 //
 
 #import "RegisterViewController.h"
+#import "Parse/Parse.h"
 
-@interface RegisterViewController ()
+
+@interface RegisterViewController () <PFSignUpViewControllerDelegate>
 
 @end
 
 @implementation RegisterViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    titleLabel.text = @"InstaGraham";
+    titleLabel.textColor = [UIColor whiteColor];
+    [titleLabel sizeToFit];
+    self.signUpView.logo = titleLabel;
+    [self.signUpView.usernameField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.signUpView.passwordField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.signUpView.emailField setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.signUpView.usernameField setTextColor:[UIColor purpleColor]];
+    [self.signUpView.passwordField setTextColor:[UIColor purpleColor]];
+    [self.signUpView.emailField setTextColor:[UIColor purpleColor]];
+    [self.signUpView setBackgroundColor:[UIColor greenColor]];
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

@@ -30,6 +30,9 @@
 		3A4EFFF718A03F9C006F0C8F /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFF618A03F9C006F0C8F /* UploadViewController.m */; };
 		3A4EFFFA18A03FE4006F0C8F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EFFF918A03FE4006F0C8F /* ProfileViewController.m */; };
 		3A4EFFFC18A045FD006F0C8F /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EFFFB18A045FD006F0C8F /* camera-icon.png */; };
+		3A9A379418A28B7900F604F0 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A379318A28B7900F604F0 /* PhotoTableViewCell.m */; };
+		3A9A37DA18A2DFCE00F604F0 /* comment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A37D918A2DFCE00F604F0 /* comment.jpg */; };
+		811F3A47FE854668AB46F1EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A453A0C847547FC8948C8A4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,11 @@
 		3A4EFFF818A03FE4006F0C8F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		3A4EFFF918A03FE4006F0C8F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		3A4EFFFB18A045FD006F0C8F /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		3A9A379218A28B7900F604F0 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		3A9A379318A28B7900F604F0 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
+		3A9A37D918A2DFCE00F604F0 /* comment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = comment.jpg; sourceTree = "<group>"; };
+		7A453A0C847547FC8948C8A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CBD17A339545CEA7BFFFBF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 				3A4EFFB118A03EC6006F0C8F /* CoreGraphics.framework in Frameworks */,
 				3A4EFFB318A03EC6006F0C8F /* UIKit.framework in Frameworks */,
 				3A4EFFAF18A03EC6006F0C8F /* Foundation.framework in Frameworks */,
+				811F3A47FE854668AB46F1EA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,7 @@
 				3A4EFFD318A03EC6006F0C8F /* InstragrahamTests */,
 				3A4EFFAD18A03EC6006F0C8F /* Frameworks */,
 				3A4EFFAC18A03EC6006F0C8F /* Products */,
+				A9CBD17A339545CEA7BFFFBF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +141,7 @@
 				3A4EFFB018A03EC6006F0C8F /* CoreGraphics.framework */,
 				3A4EFFB218A03EC6006F0C8F /* UIKit.framework */,
 				3A4EFFCD18A03EC6006F0C8F /* XCTest.framework */,
+				7A453A0C847547FC8948C8A4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +170,8 @@
 				3A4EFFF618A03F9C006F0C8F /* UploadViewController.m */,
 				3A4EFFC318A03EC6006F0C8F /* ViewController.h */,
 				3A4EFFC418A03EC6006F0C8F /* ViewController.m */,
+				3A9A379218A28B7900F604F0 /* PhotoTableViewCell.h */,
+				3A9A379318A28B7900F604F0 /* PhotoTableViewCell.m */,
 				3A4EFFC618A03EC6006F0C8F /* Images.xcassets */,
 				3A4EFFB518A03EC6006F0C8F /* Supporting Files */,
 			);
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4EFFB618A03EC6006F0C8F /* Instragraham-Info.plist */,
+				3A9A37D918A2DFCE00F604F0 /* comment.jpg */,
 				3A4EFFFB18A045FD006F0C8F /* camera-icon.png */,
 				3A4EFFB718A03EC6006F0C8F /* InfoPlist.strings */,
 				3A4EFFBA18A03EC6006F0C8F /* main.m */,
@@ -202,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A4EFFDD18A03EC6006F0C8F /* Build configuration list for PBXNativeTarget "Instragraham" */;
 			buildPhases = (
+				0D22DA6762A24D93AE9CCA97 /* Check Pods Manifest.lock */,
 				3A4EFFA718A03EC6006F0C8F /* Sources */,
 				3A4EFFA818A03EC6006F0C8F /* Frameworks */,
 				3A4EFFA918A03EC6006F0C8F /* Resources */,
+				0722D8B015A243B0B526EB3C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4EFFC718A03EC6006F0C8F /* Images.xcassets in Resources */,
+				3A9A37DA18A2DFCE00F604F0 /* comment.jpg in Resources */,
 				3A4EFFFC18A045FD006F0C8F /* camera-icon.png in Resources */,
 				3A4EFFB918A03EC6006F0C8F /* InfoPlist.strings in Resources */,
 				3A4EFFC218A03EC6006F0C8F /* Main.storyboard in Resources */,
@@ -288,6 +305,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0722D8B015A243B0B526EB3C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D22DA6762A24D93AE9CCA97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A4EFFA718A03EC6006F0C8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,6 +351,7 @@
 				3A4EFFBF18A03EC6006F0C8F /* AppDelegate.m in Sources */,
 				3A4EFFEB18A03F51006F0C8F /* BrowseViewController.m in Sources */,
 				3A4EFFF418A03F8E006F0C8F /* CameraViewController.m in Sources */,
+				3A9A379418A28B7900F604F0 /* PhotoTableViewCell.m in Sources */,
 				3A4EFFFA18A03FE4006F0C8F /* ProfileViewController.m in Sources */,
 				3A4EFFBB18A03EC6006F0C8F /* main.m in Sources */,
 				3A4EFFEE18A03F5E006F0C8F /* DetailViewController.m in Sources */,
@@ -427,6 +478,7 @@
 		};
 		3A4EFFDE18A03EC6006F0C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CBD17A339545CEA7BFFFBF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -440,6 +492,7 @@
 		};
 		3A4EFFDF18A03EC6006F0C8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CBD17A339545CEA7BFFFBF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -512,6 +565,7 @@
 				3A4EFFDF18A03EC6006F0C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A4EFFE018A03EC6006F0C8F /* Build configuration list for PBXNativeTarget "InstragrahamTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +574,7 @@
 				3A4EFFE218A03EC6006F0C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
