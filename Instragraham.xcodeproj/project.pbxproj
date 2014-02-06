@@ -32,6 +32,8 @@
 		3A4EFFFC18A045FD006F0C8F /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EFFFB18A045FD006F0C8F /* camera-icon.png */; };
 		3A9A379418A28B7900F604F0 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A379318A28B7900F604F0 /* PhotoTableViewCell.m */; };
 		3A9A37DA18A2DFCE00F604F0 /* comment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A37D918A2DFCE00F604F0 /* comment.jpg */; };
+		3A9A37DD18A3041700F604F0 /* KLMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A37DC18A3041700F604F0 /* KLMCell.m */; };
+		3A9A37E018A30C0900F604F0 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A37DF18A30C0900F604F0 /* CommentsViewController.m */; };
 		811F3A47FE854668AB46F1EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A453A0C847547FC8948C8A4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,10 @@
 		3A9A379218A28B7900F604F0 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
 		3A9A379318A28B7900F604F0 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
 		3A9A37D918A2DFCE00F604F0 /* comment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = comment.jpg; sourceTree = "<group>"; };
+		3A9A37DB18A3041700F604F0 /* KLMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMCell.h; sourceTree = "<group>"; };
+		3A9A37DC18A3041700F604F0 /* KLMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMCell.m; sourceTree = "<group>"; };
+		3A9A37DE18A30C0900F604F0 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		3A9A37DF18A30C0900F604F0 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 		7A453A0C847547FC8948C8A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CBD17A339545CEA7BFFFBF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +158,8 @@
 				3A4EFFBD18A03EC6006F0C8F /* AppDelegate.h */,
 				3A4EFFBE18A03EC6006F0C8F /* AppDelegate.m */,
 				3A4EFFC018A03EC6006F0C8F /* Main.storyboard */,
+				3A9A37DE18A30C0900F604F0 /* CommentsViewController.h */,
+				3A9A37DF18A30C0900F604F0 /* CommentsViewController.m */,
 				3A4EFFF818A03FE4006F0C8F /* ProfileViewController.h */,
 				3A4EFFF918A03FE4006F0C8F /* ProfileViewController.m */,
 				3A4EFFE318A03F33006F0C8F /* LoginViewController.h */,
@@ -172,6 +180,8 @@
 				3A4EFFC418A03EC6006F0C8F /* ViewController.m */,
 				3A9A379218A28B7900F604F0 /* PhotoTableViewCell.h */,
 				3A9A379318A28B7900F604F0 /* PhotoTableViewCell.m */,
+				3A9A37DB18A3041700F604F0 /* KLMCell.h */,
+				3A9A37DC18A3041700F604F0 /* KLMCell.m */,
 				3A4EFFC618A03EC6006F0C8F /* Images.xcassets */,
 				3A4EFFB518A03EC6006F0C8F /* Supporting Files */,
 			);
@@ -353,7 +363,9 @@
 				3A4EFFF418A03F8E006F0C8F /* CameraViewController.m in Sources */,
 				3A9A379418A28B7900F604F0 /* PhotoTableViewCell.m in Sources */,
 				3A4EFFFA18A03FE4006F0C8F /* ProfileViewController.m in Sources */,
+				3A9A37DD18A3041700F604F0 /* KLMCell.m in Sources */,
 				3A4EFFBB18A03EC6006F0C8F /* main.m in Sources */,
+				3A9A37E018A30C0900F604F0 /* CommentsViewController.m in Sources */,
 				3A4EFFEE18A03F5E006F0C8F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

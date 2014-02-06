@@ -14,6 +14,7 @@
 @interface BrowseViewController () <UIImagePickerControllerDelegate>
 {
     NSMutableArray *images;
+    NSMutableArray *objectIDs;
     UITableView *photoTableView;
 }
 
@@ -49,8 +50,14 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Image"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         images = [NSMutableArray new];
+        objectIDs = [NSMutableArray new];
         for (PFObject *object in objects) {
-            [images addObject:[object objectForKey:@"imageFile"]];
+            if (object)
+            {
+                [images addObject:[object objectForKey:@"imageFile"]];
+                [objectIDs addObject:object.objectId];
+            }
+
         }
         [photoTableView reloadData];
     }];
@@ -83,6 +90,8 @@
     DetailViewController *dvc = [storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
     PFTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     dvc.photoImage = cell.imageView.image;
+    dvc.objectID = [objectIDs objectAtIndex:indexPath.row];
+    NSLog(@"Object ID is %@",[objectIDs objectAtIndex:indexPath.row]);
     
     [self.navigationController pushViewController:dvc animated:YES];
 }
