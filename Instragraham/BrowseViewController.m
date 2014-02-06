@@ -48,6 +48,9 @@
 -(void)getImages
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Image"];
+    
+    [query orderByDescending:@"updatedAt"];
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         images = [NSMutableArray new];
         objectIDs = [NSMutableArray new];
@@ -158,6 +161,7 @@
         }
         
     }];
+    [photoTableView reloadData];
 }
 
 @end
